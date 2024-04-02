@@ -13,16 +13,16 @@ public class RandomDoubleArray {
 
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.print("Enter an index (0-49): ");
+            System.out.print("Enter an index between 0 and 49: ");
             int index = scanner.nextInt();
 
             if (index >= 0 && index < array.length) {
-                System.out.println("Value at index " + index + ": " + array[index]);
+                System.out.println("Value index is " + index + ": " + array[index]);
             } else {
                 System.out.println("Index out of range.");
             }
         } catch (InputMismatchException e) {
-            System.out.println("Please enter a valid integer index.");
+            System.out.println("Please try again with a valid integer index.");
         } finally {
             scanner.close();
         }
